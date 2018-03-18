@@ -1,0 +1,38 @@
+
+/*移动列*/
+#drag_box {
+    position: absolute;
+    display: none;
+    text-align: center;
+    top: 0;
+    background: url('../img/mask_black_alpha.png') repeat 0 0;
+    color: #fff;
+    height: 100%;
+    /*cursor: move;*/
+    /*user-select: none;*/
+}
+#drag_box p {
+    line-height: 2;
+}
+#drag_box table td:hover {
+    background: none;
+    color: #fff !important;
+}
+#drag_box table ul {
+    display: table;
+}
+#drag_box table li {
+    display: table-cell;
+    overflow: hidden;
+
+}
+
+#drag_box table .th ,
+#drag_box table .td  {
+    -moz-user-select: none; /*火狐*/
+    -webkit-user-select: none; /*webkit浏览器*/
+    -ms-user-select: none; /*IE10*/
+    -khtml-user-select: none; /*早期浏览器*/
+    user-select: none;
+}
+
